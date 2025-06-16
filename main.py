@@ -11,8 +11,8 @@ import os
 TOKEN = os.environ['TOKEN']
 
 CSV_FILE = 'registro.csv'
-CANAL_FICHAJE_ID = 1383986991280160828  # ID del canal donde están los botones
-CANAL_RESUMEN_ID = 1384006193164587099  # ID del canal donde se enviará el resumen semanal
+CANAL_FICHAJE_ID = int(os.environ['CANAL_FICHAJE_ID'])  # ID del canal donde están los botones
+CANAL_RESUMEN_ID = int(os.environ['CANAL_RESUMEN_ID'])  # ID del canal donde se enviará el resumen semanal
 
 intents = discord.Intents.default()
 intents.messages = True
